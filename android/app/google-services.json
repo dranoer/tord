@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "921001930784",
+    "firebase_url": "https://tord-6678e.firebaseio.com",
+    "project_id": "tord-6678e",
+    "storage_bucket": "tord-6678e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921001930784:android:43475cf7551795bcd74c45",
+        "android_client_info": {
+          "package_name": "com.nightmareinc.truth_or_dare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921001930784-1d36ls7qfb7t672av50a1v7brml43ch9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt1kKNrOYjDiqo6_GSSAxlRGLb0tjHlgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921001930784-1d36ls7qfb7t672av50a1v7brml43ch9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,75 @@
+{
+  "setting": {
+    "common": {
+      "title": "Common",
+      "language": "Language",
+      "default": "English",
+      "en": "English",
+      "fa": "فارسی",
+      "tr": "Türkçe",
+      "sound": "Sound"
+    },
+    "game": {
+      "title": "Game",
+      "share": "Share"
+    },
+    "about": {
+      "title": "About",
+      "game_version_title": "Game Version",
+      "game_version_number": "1.0.0",
+      "contact": "Contact Us"
+    }
+  },
+  "dialog": {
+    "share": "Feel free to reach us by this email:\nnazanin.dev@gmail.com",
+    "exit": {
+      "title": "Are you sure?",
+      "content": "Do you want to exit the App"
+    },
+    "spinning": {
+      "content": "Choose what do you want, TRUTH or DARE?"
+    }
+  },
+  "app_bar": {
+    "add_truth_title": "Add Truth",
+    "add_dare_title": "Add Dare",
+    "category_title": "Category",
+    "add_player_title": "Add Player",
+    "result_title": "Result"
+  },
+  "category": {
+    "kid": "Kid",
+    "teen": "Teen",
+    "adult": "Adult",
+    "hot": "Hot",
+    "user": "Your Questions"
+  },
+  "button": {
+    "yes": "Yes",
+    "no": "No",
+    "start": "Start",
+    "add_truth": "Add Truth",
+    "add_dare": "Add Dare",
+    "cool": "Cool!",
+    "meow": "M e o w",
+    "go": "GO",
+    "truth": "Truth",
+    "dare": "Dare",
+    "fail": "Fail",
+    "done": "Done",
+    "home_page": "Home Page",
+    "play_again": "Play Again"
+  },
+  "hint": {
+    "enter_truth": "Enter a Truth",
+    "enter_dare": "Enter a Dare",
+    "enter_name": "Enter a Name"
+  },
+  "error": {
+    "offline": "Please turn on your internet!",
+    "unavailable": "Sorry this item is not available right now",
+    "player_number": "Please add at least 2 Players!",
+    "truth_count": "You need to add more Truths",
+    "dare_count": "You need to add more Dares"
+  }
+}

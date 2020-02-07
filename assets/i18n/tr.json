@@ -1,0 +1,75 @@
+{
+  "setting": {
+    "common": {
+      "title": "Yaygın",
+      "language": "Dil",
+      "default": "Türkçe",
+      "en": "English",
+      "fa": "فارسی",
+      "tr": "Türkçe",
+      "sound": "Ses"
+    },
+    "game": {
+      "title": "Oyun",
+      "share": "Paylaş"
+    },
+    "about": {
+      "title": "Hakkında",
+      "game_version_title": "Oyun Versiyonu",
+      "game_version_number": "1.0.0",
+      "contact": "Bize Ulaşın"
+    }
+  },
+  "dialog": {
+    "share": "Bu e-posta ile bize ulaşın:\nnazanin.dev@gmail.com",
+    "exit": {
+      "title": "Emin misiniz",
+      "content": "Uygulamadan çıkmak istiyor musunuz?"
+    },
+    "spinning": {
+      "content": "Ne istediğini seç, gerçek mi cesaret mi?"
+    }
+  },
+  "app_bar": {
+    "add_truth_title": "Gerçek ekle",
+    "add_dare_title": "Cesaret ekle",
+    "category_title": "Kategori",
+    "add_player_title": "Oyuncu Ekle",
+    "result_title": "Sonuç"
+  },
+  "category": {
+    "kid": "Çocuk",
+    "teen": "Genç",
+    "adult": "Yetişkin",
+    "hot": "Özel",
+    "user": "Sorularınız"
+  },
+  "button": {
+    "yes": "Evet",
+    "no": "Hayır",
+    "start": "Başlat",
+    "add_truth": "Hakikat Ekle",
+    "add_dare": "Cesaret Ekle",
+    "cool": "Güzel!",
+    "meow": "Miyav",
+    "go": "Git",
+    "truth": "Hakikat",
+    "dare": "Cesaret",
+    "fail": "Başarısız",
+    "done": "Başarı",
+    "home_page": "Ana Sayfa",
+    "play_again": "Tekrar Oyna"
+  },
+  "hint": {
+    "enter_truth": "Bir Gerçek girin",
+    "enter_dare": "Bir Cesaret girin",
+    "enter_name": "İsim girin"
+  },
+  "error": {
+    "offline": "Lütfen internetinizi açın!",
+    "unavailable": "Üzgünüz, bu ürün şu anda mevcut değil",
+    "player_number": "Lütfen en az 2 Oyuncu ekleyin!",
+    "truth_count": "Daha fazla Hakikat eklemeniz gerekiyor",
+    "dare_count": "Daha fazla cesaret eklemelisin"
+  }
+}

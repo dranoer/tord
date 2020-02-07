@@ -1,0 +1,75 @@
+{
+  "setting": {
+    "common": {
+      "title": "عمومی",
+      "language": "زبان",
+      "default": "فارسی",
+      "en": "English",
+      "fa": "فارسی",
+      "tr": "Türkçe",
+      "sound": "موزیک"
+    },
+    "game": {
+      "title": "بازی",
+      "share": "اشتراک گذاری"
+    },
+    "about": {
+      "title": "درباره",
+      "game_version_title": "نسخه بازی",
+      "game_version_number": "۱.۰.۰",
+      "contact": "تماس با ما"
+    }
+  },
+  "dialog": {
+    "share": "میتونی به ما ایمیل بزنی \n nazanin.dev@gmail.com",
+    "exit": {
+      "title": "مطمئنی؟؟",
+      "content": "که واقعا میخوای بری"
+    },
+    "spinning": {
+      "content": "انتخاب کن چی میخوای، جرات یا حقیقت؟"
+    }
+  },
+  "app_bar": {
+    "add_truth_title": "اضافه کردن حقیقت",
+    "add_dare_title": "اضافه کردن جرات",
+    "category_title": "دسته بندی",
+    "add_player_title": "اضافه کردن بازیکن",
+    "result_title": "نتیجه بازی"
+  },
+  "category": {
+    "kid": "کودک",
+    "teen": "نوجوان",
+    "adult": "بزرگسال",
+    "hot": "ویژه",
+    "user": "سوالای خودت"
+  },
+  "button": {
+    "yes": "بله",
+    "no": "نه",
+    "start": "شروع",
+    "add_truth": "حقیقت +",
+    "add_dare": "جرات +",
+    "cool": "چه باحال",
+    "meow": "میوووو",
+    "go": "بچرخون",
+    "truth": "حقیقت",
+    "dare": "جرات",
+    "fail": "باخت",
+    "done": "برد",
+    "home_page": "صفحه اصلی",
+    "play_again": "بازی دوباره"
+  },
+  "hint": {
+    "enter_truth": "یه حقیقت وارد کن",
+    "enter_dare": "یه جرات وارد کن",
+    "enter_name": "یه اسم وارد کن"
+  },
+  "error": {
+    "offline": "اینترنتت رو روشن کن لدفاااا",
+    "unavailable": "خرید این پکیج فعلا غیرممکنه",
+    "player_number": "بادی حداقل ۲تا بازیکن اد کنی",
+    "truth_count": "سوالای بیشتری واسه حقیقت وارد کن",
+    "dare_count": "سوالای بیشتری واسه جرات وارد کن"
+  }
+}
