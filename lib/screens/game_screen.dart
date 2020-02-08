@@ -3,6 +3,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:provider/provider.dart';
+import 'package:truth_or_dare/components/AdHelper.dart';
 import 'package:truth_or_dare/components/custom_appbar.dart';
 import 'package:truth_or_dare/components/gesture_card.dart';
 import 'package:truth_or_dare/constants.dart';
@@ -22,6 +23,8 @@ import 'package:truth_or_dare/services/game.dart';
 import 'package:truth_or_dare/services/networking_get.dart';
 import 'package:like_button/like_button.dart';
 import 'package:truth_or_dare/services/networking_post.dart';
+
+const String testDevice = 'YOUR_DEVICE_ID';
 
 class GameScreen extends StatefulWidget {
   static const String id = 'truthdare_screen';
@@ -82,6 +85,13 @@ class _GameScreenState extends State<GameScreen> {
   void initState() {
     super.initState();
     freeGame = fetchGames();
+    Ads.showBannerAd();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    Ads.hideBannerAd();
   }
 
   @override
@@ -398,7 +408,7 @@ class _GameScreenState extends State<GameScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 40.0, right: 40.0, bottom: 30.0),
+                    left: 40.0, right: 40.0, bottom: 100.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[

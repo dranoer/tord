@@ -13,6 +13,7 @@ import 'package:truth_or_dare/screens/game_screen.dart';
 import '../components/spinner/board_view.dart';
 import 'package:truth_or_dare/models/arguments.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:truth_or_dare/components/AdHelper.dart';
 
 class SpinningScreen extends StatefulWidget {
   static const String id = 'spinning_screen';
@@ -169,29 +170,35 @@ class _SpinningScreenState extends State<SpinningScreen>
                           if (args.range != 4) {
                             // Questions comes from server
                             Navigator.pushNamed(context, GameScreen.id,
-                                arguments: ScreenArguments(
-                                  player: currentPlayer,
-                                  choice: true,
-                                  range: args.range,
-                                  userTruth: args.userTruth,
-                                  userDare: args.userDare,
-                                  advancedPlayer: args.advancedPlayer,
-                                  soundHandler: args.soundHandler,
-                                ));
+                                    arguments: ScreenArguments(
+                                      player: currentPlayer,
+                                      choice: true,
+                                      range: args.range,
+                                      userTruth: args.userTruth,
+                                      userDare: args.userDare,
+                                      advancedPlayer: args.advancedPlayer,
+                                      soundHandler: args.soundHandler,
+                                    )) /*.then((value) {
+                              Ads.showBannerAd();
+                            })*/
+                                ;
                           } else {
                             // Questions comes from local database
                             if (args.userTruth.length > 1) {
                               // Check for null empty truths
                               Navigator.pushNamed(context, GameScreen.id,
-                                  arguments: ScreenArguments(
-                                    player: currentPlayer,
-                                    choice: true,
-                                    range: args.range,
-                                    userTruth: args.userTruth,
-                                    userDare: args.userDare,
-                                    advancedPlayer: args.advancedPlayer,
-                                    soundHandler: args.soundHandler,
-                                  ));
+                                      arguments: ScreenArguments(
+                                        player: currentPlayer,
+                                        choice: true,
+                                        range: args.range,
+                                        userTruth: args.userTruth,
+                                        userDare: args.userDare,
+                                        advancedPlayer: args.advancedPlayer,
+                                        soundHandler: args.soundHandler,
+                                      )) /*.then((value) {
+                                Ads.showBannerAd();
+                              })*/
+                                  ;
                             } else {
                               Fluttertoast.showToast(
                                 msg: translate('error.truth_count').toString(),
@@ -216,28 +223,34 @@ class _SpinningScreenState extends State<SpinningScreen>
                           Navigator.of(context).pop(true);
                           if (args.range != 4) {
                             Navigator.pushNamed(context, GameScreen.id,
-                                arguments: ScreenArguments(
-                                  player: currentPlayer,
-                                  choice: false,
-                                  range: args.range,
-                                  userTruth: args.userTruth,
-                                  userDare: args.userDare,
-                                  advancedPlayer: args.advancedPlayer,
-                                  soundHandler: args.soundHandler,
-                                ));
+                                    arguments: ScreenArguments(
+                                      player: currentPlayer,
+                                      choice: false,
+                                      range: args.range,
+                                      userTruth: args.userTruth,
+                                      userDare: args.userDare,
+                                      advancedPlayer: args.advancedPlayer,
+                                      soundHandler: args.soundHandler,
+                                    )) /*.then((value) {
+                              Ads.showBannerAd();
+                            })*/
+                                ;
                           } else {
                             if (args.userDare.length > 1) {
                               // Check for null empty dares
                               Navigator.pushNamed(context, GameScreen.id,
-                                  arguments: ScreenArguments(
-                                    player: currentPlayer,
-                                    choice: false,
-                                    range: args.range,
-                                    userTruth: args.userTruth,
-                                    userDare: args.userDare,
-                                    advancedPlayer: args.advancedPlayer,
-                                    soundHandler: args.soundHandler,
-                                  ));
+                                      arguments: ScreenArguments(
+                                        player: currentPlayer,
+                                        choice: false,
+                                        range: args.range,
+                                        userTruth: args.userTruth,
+                                        userDare: args.userDare,
+                                        advancedPlayer: args.advancedPlayer,
+                                        soundHandler: args.soundHandler,
+                                      )) /*.then((value) {
+                                Ads.showBannerAd();
+                              })*/
+                                  ;
                             } else {
                               Fluttertoast.showToast(
                                 msg: translate('error.dare_count').toString(),

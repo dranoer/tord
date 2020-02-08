@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:provider/provider.dart';
+import 'package:truth_or_dare/components/AdHelper.dart';
 import 'package:truth_or_dare/constants.dart';
 import 'package:truth_or_dare/database/database_provider_player.dart';
 import 'package:truth_or_dare/models/arguments.dart';
@@ -22,6 +23,12 @@ class ResultScreen extends StatefulWidget {
 class _ResultScreenState extends State<ResultScreen> {
   Size get size => Size(MediaQuery.of(context).size.width * 0.8,
       MediaQuery.of(context).size.width * 0.8);
+
+  @override
+  void dispose() {
+    super.dispose();
+    Ads.hideBannerAd();
+  }
 
   @override
   Widget build(BuildContext context) {

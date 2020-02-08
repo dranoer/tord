@@ -60,6 +60,7 @@ dependencies:
   # Google Services
   firebase_crashlytics: ^0.1.2+5
   firebase_messaging: ^6.0.9
+  firebase_admob: ^0.9.0+10
 
 dev_dependencies:
   flutter_test:
