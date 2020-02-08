@@ -17,9 +17,10 @@ class Ads {
     nonPersonalizedAds: true,
   );
 
+  /*BannerAd.testAdUnitId*/
   static BannerAd _createBannerAd() {
     return BannerAd(
-      adUnitId: BannerAd.testAdUnitId,
+      adUnitId: 'ca-app-pub-6154525818724812/4323644152',
       size: AdSize.banner,
       targetingInfo: targetingInfo,
       listener: (MobileAdEvent event) {
