@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:giffy_dialog/giffy_dialog.dart';
 import 'package:share/share.dart';
+import 'package:truth_or_dare/components/AdHelper.dart';
 import 'package:truth_or_dare/constants.dart';
 import 'package:truth_or_dare/models/arguments.dart';
 import 'package:truth_or_dare/screens/add_screen_dare.dart';
@@ -121,6 +122,7 @@ class _MenuScreenState extends State<MenuScreen> {
     _volumeButtonSubscription?.cancel();
     _homeButtonSubscription?.cancel();
     _lockButtonSubscription?.cancel();
+    Ads.hideBannerAd();
   }
 
   @override

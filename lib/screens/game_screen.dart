@@ -108,7 +108,7 @@ class _GameScreenState extends State<GameScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(top: 50.0),
+                padding: const EdgeInsets.only(top: 40.0),
                 child: Column(
 //                mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -408,7 +408,7 @@ class _GameScreenState extends State<GameScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 40.0, right: 40.0, bottom: 100.0),
+                    left: 40.0, right: 40.0, bottom: 120.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
