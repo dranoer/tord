@@ -19,11 +19,7 @@ class CategoryItem extends StatelessWidget {
       child: GestureDetector(
         onTap: () {
           Navigator.pushNamed(context, NameScreen.id,
-              arguments: ScreenArguments(
-                range: range,
-                advancedPlayer: args.advancedPlayer,
-                soundHandler: args.soundHandler,
-              ));
+              arguments: ScreenArguments(range: range));
         },
         child: SelectableRow(
             name: name, imageRoot: imageName, color: Colors.grey[700]),

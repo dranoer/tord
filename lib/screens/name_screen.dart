@@ -134,12 +134,9 @@ class _NameScreenState extends State<NameScreen> {
                   if (playerCount > 1) {
                     Navigator.pushNamed(context, SpinningScreen.id,
                         arguments: ScreenArguments(
-                          range: args.range,
-                          userTruth: args.userTruth,
-                          userDare: args.userDare,
-                          advancedPlayer: args.advancedPlayer,
-                          soundHandler: args.soundHandler,
-                        ));
+                            range: args.range,
+                            userTruth: args.userTruth,
+                            userDare: args.userDare));
                   } else {
                     Fluttertoast.showToast(
                       msg: translate('error.player_number').toString(),

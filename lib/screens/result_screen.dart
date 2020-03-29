@@ -104,12 +104,7 @@ class _ResultScreenState extends State<ResultScreen> {
                       color: kDarkGrey800,
                       onPress: () {
                         Navigator.of(context).pop(true);
-                        Navigator.pushNamed(context, MenuScreen.id,
-                            arguments: ScreenArguments(
-                              advancedPlayer: args.advancedPlayer,
-                              soundHandler: args.soundHandler,
-                            ));
-//                        args.advancedPlayer.pause();
+                        Navigator.pushNamed(context, MenuScreen.id);
                       },
                     ),
                     RoundButton(

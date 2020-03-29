@@ -46,12 +46,9 @@ class _CatScreenState extends State<CatScreen> {
                           onTap: () {
                             Navigator.pushNamed(context, NameScreen.id,
                                 arguments: ScreenArguments(
-                                  range: 4,
-                                  userTruth: truthList,
-                                  userDare: dareList,
-                                  advancedPlayer: args.advancedPlayer,
-                                  soundHandler: args.soundHandler,
-                                ));
+                                    range: 4,
+                                    userTruth: truthList,
+                                    userDare: dareList));
                           },
                           child: SelectableRow(
                             name: 'user',

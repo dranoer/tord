@@ -420,14 +420,11 @@ class _GameScreenState extends State<GameScreen> {
                           Navigator.of(context).pop(true);
                           Navigator.pushNamed(context, ResultScreen.id,
                               arguments: ScreenArguments(
-                                range: args.range,
-                                userTruth: args.userTruth,
-                                player: args.player,
-                                freeGameList: args.freeGameList,
-                                choice: args.choice,
-                                advancedPlayer: args.advancedPlayer,
-                                soundHandler: args.soundHandler,
-                              ));
+                                  range: args.range,
+                                  userTruth: args.userTruth,
+                                  player: args.player,
+                                  freeGameList: args.freeGameList,
+                                  choice: args.choice));
                         },
                       ),
                     ),
@@ -449,14 +446,11 @@ class _GameScreenState extends State<GameScreen> {
 
                           Navigator.pushNamed(context, ResultScreen.id,
                               arguments: ScreenArguments(
-                                range: args.range,
-                                userTruth: args.userTruth,
-                                player: args.player,
-                                freeGameList: args.freeGameList,
-                                choice: args.choice,
-                                advancedPlayer: args.advancedPlayer,
-                                soundHandler: args.soundHandler,
-                              ));
+                                  range: args.range,
+                                  userTruth: args.userTruth,
+                                  player: args.player,
+                                  freeGameList: args.freeGameList,
+                                  choice: args.choice));
                         },
                       ),
                     )

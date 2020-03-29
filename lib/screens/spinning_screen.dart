@@ -171,14 +171,12 @@ class _SpinningScreenState extends State<SpinningScreen>
                             // Questions comes from server
                             Navigator.pushNamed(context, GameScreen.id,
                                     arguments: ScreenArguments(
-                                      player: currentPlayer,
-                                      choice: true,
-                                      range: args.range,
-                                      userTruth: args.userTruth,
-                                      userDare: args.userDare,
-                                      advancedPlayer: args.advancedPlayer,
-                                      soundHandler: args.soundHandler,
-                                    )) /*.then((value) {
+                                        player: currentPlayer,
+                                        choice: true,
+                                        range: args.range,
+                                        userTruth: args.userTruth,
+                                        userDare: args
+                                            .userDare)) /*.then((value) {
                               Ads.showBannerAd();
                             })*/
                                 ;
@@ -188,14 +186,12 @@ class _SpinningScreenState extends State<SpinningScreen>
                               // Check for null empty truths
                               Navigator.pushNamed(context, GameScreen.id,
                                       arguments: ScreenArguments(
-                                        player: currentPlayer,
-                                        choice: true,
-                                        range: args.range,
-                                        userTruth: args.userTruth,
-                                        userDare: args.userDare,
-                                        advancedPlayer: args.advancedPlayer,
-                                        soundHandler: args.soundHandler,
-                                      )) /*.then((value) {
+                                          player: currentPlayer,
+                                          choice: true,
+                                          range: args.range,
+                                          userTruth: args.userTruth,
+                                          userDare: args
+                                              .userDare)) /*.then((value) {
                                 Ads.showBannerAd();
                               })*/
                                   ;
@@ -211,11 +207,8 @@ class _SpinningScreenState extends State<SpinningScreen>
                               );
                               Navigator.pushNamed(context, AddScreenTruth.id,
                                   arguments: ScreenArguments(
-                                    userTruth: args.userTruth,
-                                    userDare: args.userDare,
-                                    advancedPlayer: args.advancedPlayer,
-                                    soundHandler: args.soundHandler,
-                                  ));
+                                      userTruth: args.userTruth,
+                                      userDare: args.userDare));
                             }
                           }
                         },
@@ -224,14 +217,12 @@ class _SpinningScreenState extends State<SpinningScreen>
                           if (args.range != 4) {
                             Navigator.pushNamed(context, GameScreen.id,
                                     arguments: ScreenArguments(
-                                      player: currentPlayer,
-                                      choice: false,
-                                      range: args.range,
-                                      userTruth: args.userTruth,
-                                      userDare: args.userDare,
-                                      advancedPlayer: args.advancedPlayer,
-                                      soundHandler: args.soundHandler,
-                                    )) /*.then((value) {
+                                        player: currentPlayer,
+                                        choice: false,
+                                        range: args.range,
+                                        userTruth: args.userTruth,
+                                        userDare: args
+                                            .userDare)) /*.then((value) {
                               Ads.showBannerAd();
                             })*/
                                 ;
@@ -240,14 +231,12 @@ class _SpinningScreenState extends State<SpinningScreen>
                               // Check for null empty dares
                               Navigator.pushNamed(context, GameScreen.id,
                                       arguments: ScreenArguments(
-                                        player: currentPlayer,
-                                        choice: false,
-                                        range: args.range,
-                                        userTruth: args.userTruth,
-                                        userDare: args.userDare,
-                                        advancedPlayer: args.advancedPlayer,
-                                        soundHandler: args.soundHandler,
-                                      )) /*.then((value) {
+                                          player: currentPlayer,
+                                          choice: false,
+                                          range: args.range,
+                                          userTruth: args.userTruth,
+                                          userDare: args
+                                              .userDare)) /*.then((value) {
                                 Ads.showBannerAd();
                               })*/
                                   ;
@@ -263,11 +252,8 @@ class _SpinningScreenState extends State<SpinningScreen>
                               );
                               Navigator.pushNamed(context, AddScreenDare.id,
                                   arguments: ScreenArguments(
-                                    userTruth: args.userTruth,
-                                    userDare: args.userDare,
-                                    advancedPlayer: args.advancedPlayer,
-                                    soundHandler: args.soundHandler,
-                                  ));
+                                      userTruth: args.userTruth,
+                                      userDare: args.userDare));
                             }
                           }
                         },

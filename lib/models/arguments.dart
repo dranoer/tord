@@ -1,4 +1,3 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:truth_or_dare/models/dare.dart';
 import 'package:truth_or_dare/models/player.dart';
 import 'package:truth_or_dare/models/truth.dart';
@@ -11,9 +10,7 @@ class ScreenArguments {
       this.range,
       this.freeGameList,
       this.userTruth,
-      this.userDare,
-      this.advancedPlayer,
-      this.soundHandler});
+      this.userDare});
 
   final Player player;
   final bool choice; // true == truth, false == dare
@@ -21,6 +18,4 @@ class ScreenArguments {
   final Future<List<Game>> freeGameList;
   final List<Truth> userTruth;
   final List<Dare> userDare;
-  final AudioPlayer advancedPlayer;
-  /*final */ bool soundHandler;
 }

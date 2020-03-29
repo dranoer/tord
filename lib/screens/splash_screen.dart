@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:truth_or_dare/models/arguments.dart';
 import 'package:truth_or_dare/screens/menu_screen.dart';
-import 'package:audioplayers/audio_cache.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String id = 'splash_screen';
@@ -18,18 +16,11 @@ class SplashScreen extends StatefulWidget {
 class SplashScreenState extends State<SplashScreen> {
   var height = 100.0;
 
-  AudioPlayer advancedPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
-
   @override
   void initState() {
     super.initState();
     loadAnimation();
     loadData();
-    loadMusic();
-  }
-
-  Future loadMusic() async {
-    advancedPlayer = await AudioCache().loop("sound/bxcat.mp3");
   }
 
   Future<Timer> loadAnimation() async {
@@ -48,11 +39,7 @@ class SplashScreenState extends State<SplashScreen> {
 
   onDoneLoading() async {
     Navigator.of(context).pop(true);
-    Navigator.pushNamed(context, MenuScreen.id,
-        arguments: ScreenArguments(
-          advancedPlayer: advancedPlayer,
-          soundHandler: true,
-        ));
+    Navigator.pushNamed(context, MenuScreen.id);
   }
 
   @override

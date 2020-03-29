@@ -166,12 +166,7 @@ class _AddScreenState extends State<AddScreenDare> {
                 onPress: () {
                   Navigator.pushNamed(context, MenuScreen.id,
                       arguments: ScreenArguments(
-//                          range: args.range,
-                        userTruth: args.userTruth,
-                        userDare: args.userDare,
-                        advancedPlayer: args.advancedPlayer,
-                        soundHandler: args.soundHandler,
-                      ));
+                          userTruth: args.userTruth, userDare: args.userDare));
                 }),
           )
         ],
