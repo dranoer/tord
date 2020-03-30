@@ -41,7 +41,7 @@ dependencies:
   settings_ui: ^0.2.0
   like_button: ^0.1.9
   flutter_launcher_icons: ^0.7.4
-  easy_localization: ^1.3.1
+#  easy_localization: ^2.0.2
   http_interceptor: ^0.1.1
   # Google Services
   firebase_crashlytics: ^0.1.2+5
@@ -67,7 +67,9 @@ flutter:
   assets:
     - assets/images/
     - assets/sound/
-    - assets/i18n/
+    - assets/i18n/en.json
+    - assets/i18n/fa.json
+    - assets/i18n/tr.json
 
   fonts:
     - family: Kalam

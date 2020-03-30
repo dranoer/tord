@@ -28,7 +28,7 @@ void main() async {
   // Localization
   var delegate = await LocalizationDelegate.create(
     fallbackLocale: 'en_US',
-    supportedLocales: ['en_US', 'fa', 'tr'],
+    supportedLocales: ['en_US', 'fa' /*, 'tr'*/],
   );
 
   runApp(LocalizedApp(delegate, TruthDare()));

@@ -28,7 +28,6 @@ class _SpinningScreenState extends State<SpinningScreen>
   double _current = 0;
   AnimationController _ctrl;
   Animation _ani;
-
   List<Player> finalPlayer;
   int pCount;
   bool isTouched;
@@ -121,32 +120,14 @@ class _SpinningScreenState extends State<SpinningScreen>
                   final String cpName = currentPlayer
                       .name; // Current Player Name, can not use directly from currentPlayer.name
 
-                  /*String gif;
-                bool isTrue;
-                bool isKid;
-                if (args.range == 3) {
-                  gif = "images/scary.gif";
-                  isTrue = true;
-                }
-                if (args.range == 3) {
-                  gif = "images/catmusic.gif";
-                  isTrue = false;
-                }*/
-
                   showDialog(
                     barrierDismissible: false,
                     context: context,
                     builder: (_) => WillPopScope(
                       onWillPop: () {},
                       child: AssetGiffyDialog(
-                        image:
-                            /*isTrue
-                          ? Image.asset(gif, fit: BoxFit.cover)
-                          : Image.asset(gif, fit: BoxFit.cover),*/
-                            Image.asset(
-                          'assets/images/pickme.gif',
-                          fit: BoxFit.cover,
-                        ),
+                        image: Image.asset('assets/images/pickme.gif',
+                            fit: BoxFit.cover),
                         title: Text(
                           cpName,
                           textAlign: TextAlign.center,
@@ -156,11 +137,9 @@ class _SpinningScreenState extends State<SpinningScreen>
                               color: Colors.red),
                         ),
                         entryAnimation: EntryAnimation.BOTTOM_RIGHT,
-                        description: Text(
-                          translate('dialog.spinning.content'),
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 16.0),
-                        ),
+                        description: Text(translate('dialog.spinning.content'),
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 16.0)),
                         buttonOkColor: Colors.blue,
                         buttonCancelColor: kLightGrey,
                         buttonOkText: Text(translate('button.truth')),
@@ -286,7 +265,6 @@ class _SpinningScreenState extends State<SpinningScreen>
   }
 
   Future<int> _buildResult(_value) async {
-//    return Consumer<PlayerData>(builder: (context, playerData, child) {
     final playerData = Provider.of<PlayerData>(context);
     var _base = (2 * pi / pCount / 2) / (2 * pi);
     var _index =
@@ -294,17 +272,6 @@ class _SpinningScreenState extends State<SpinningScreen>
 
     final String _name = playerData.players[_index].name;
     final int idd = playerData.players[_index].id;
-    /*return Padding(
-        padding: EdgeInsets.symmetric(vertical: 48.0),
-        child: Align(
-          alignment: Alignment.bottomCenter,
-          child: Text(
-            'Its $_name turn!',
-            style: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
-          ),
-        ),
-      );*/
-//    });
     return idd;
   }
 }

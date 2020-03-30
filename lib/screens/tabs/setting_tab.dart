@@ -1,3 +1,4 @@
+//import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_translate/flutter_translate.dart';
@@ -14,6 +15,8 @@ class SettingTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // check for localization
+    var localizationDelegate = LocalizedApp.of(context).delegate;
     return Scaffold(
       backgroundColor: Color(0xFFEFEFF4),
       body: Padding(
@@ -24,11 +27,17 @@ class SettingTab extends StatelessWidget {
               title: translate('setting.common.title'),
               tiles: [
                 SettingsTile(
-                  title: translate('setting.common.language'),
-                  subtitle: translate('setting.common.default'),
-                  leading: Icon(Icons.language),
-                  onTap: () {},
-                ),
+                    title: translate('setting.common.language'),
+                    subtitle: translate('setting.common.default'),
+                    leading: Icon(Icons.language),
+                    onTap: () {
+                      if (localizationDelegate.currentLocale.languageCode ==
+                          'en') {
+                        changeLocale(context, 'fa');
+                      } else {
+                        changeLocale(context, 'en');
+                      }
+                    }),
               ],
             ),
             SettingsSection(
