@@ -1,12 +1,17 @@
-//import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:giffy_dialog/giffy_dialog.dart';
 import 'package:settings_ui/settings_ui.dart';
 import 'package:share/share.dart';
-
+import 'package:truth_or_dare/services/intents/calls_and_messages_service.dart';
+import 'package:truth_or_dare/services/intents/service_locator.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../constants.dart';
+
+final CallsAndMessagesService _service = locator<CallsAndMessagesService>();
+final String number = "+905523329577";
+final String email = "nazanin.dev@gmail.com";
 
 class SettingTab extends StatelessWidget {
   const SettingTab({@required this.context});
@@ -52,6 +57,11 @@ class SettingTab extends StatelessWidget {
                         subject: 'TorD');
                   },
                 ),
+                SettingsTile(
+                  title: translate('setting.about.game_version_title'),
+                  subtitle: translate('setting.about.game_version_number'),
+                  leading: Icon(Icons.android),
+                ),
 //                      SettingsTile(
 //                        title: 'Rate',
 //                        leading: Icon(Icons.star),
@@ -62,43 +72,29 @@ class SettingTab extends StatelessWidget {
               title: translate('setting.about.title'),
               tiles: [
                 SettingsTile(
-                  title: translate('setting.about.game_version_title'),
-                  subtitle: translate('setting.about.game_version_number'),
-                  leading: Icon(Icons.android),
-                ),
-                SettingsTile(
                   title: translate('setting.about.contact'),
                   leading: Icon(Icons.email),
                   onTap: () {
                     showDialog(
-//                            barrierDismissible: false,
                         context: context,
-                        builder: (_) => WillPopScope(
-                              onWillPop: () {},
-                              child: AssetGiffyDialog(
-                                title: Text(
-                                  '',
-                                  style: TextStyle(fontSize: 1.0),
-                                ),
-                                image: Image.asset(
-                                  'assets/images/catmusic.gif',
-                                  fit: BoxFit.cover,
-                                ),
-                                entryAnimation: EntryAnimation.BOTTOM_RIGHT,
-                                description: Text(
-                                  translate('dialog.share'),
+                        builder: (_) => AssetGiffyDialog(
+                              title: Text('', style: TextStyle(fontSize: 1.0)),
+                              image: Image.asset('assets/images/catmusic.gif',
+                                  fit: BoxFit.cover),
+                              entryAnimation: EntryAnimation.BOTTOM_RIGHT,
+                              description: Text(translate('dialog.share'),
                                   textAlign: TextAlign.center,
-                                  style: TextStyle(fontSize: 16.0),
-                                ),
-                                buttonOkColor: kDarkGrey,
-                                buttonCancelColor: Colors.blue,
-                                buttonOkText: Text(translate('button.meow')),
-                                buttonCancelText: Text(
-                                  translate('button.cool'),
-//                                onOkButtonPressed: () {},
-//                                onCancelButtonPressed: () {},
-                                ),
-                              ),
+                                  style: TextStyle(fontSize: 18.0)),
+                              buttonOkColor: Colors.pink.shade300,
+                              buttonCancelColor: Colors.blue.shade300,
+                              onOkButtonPressed: () {
+                                _service.sendSms(number);
+                              },
+                              onCancelButtonPressed: () {
+                                _service.sendEmail(email);
+                              },
+                              buttonOkText: Text(translate('button.sms')),
+                              buttonCancelText: Text(translate('button.email')),
                             ));
                   },
                 ),

@@ -43,6 +43,9 @@ dependencies:
   flutter_launcher_icons: ^0.7.4
 #  easy_localization: ^2.0.2
   http_interceptor: ^0.1.1
+  # Intent to call, email etc
+  get_it: ^1.0.3+2
+  url_launcher: ^5.0.3
   # Google Services
   firebase_crashlytics: ^0.1.2+5
   firebase_messaging: ^6.0.9

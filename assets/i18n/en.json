@@ -15,13 +15,13 @@
     },
     "about": {
       "title": "About",
-      "game_version_title": "Game Version",
-      "game_version_number": "1.0.0",
+      "game_version_title": "Version",
+      "game_version_number": "1.1.0",
       "contact": "Contact Us"
     }
   },
   "dialog": {
-    "share": "Feel free to reach us by this email:\nnazanin.dev@gmail.com",
+    "share": "Feel free to reach us!",
     "exit": {
       "title": "Are you sure?",
       "content": "Do you want to exit the App"
@@ -50,8 +50,8 @@
     "start": "Start",
     "add_truth": "Add Truth",
     "add_dare": "Add Dare",
-    "cool": "Cool!",
-    "meow": "M e o w",
+    "email": "Email",
+    "sms": "SMS",
     "go": "GO",
     "truth": "Truth",
     "dare": "Dare",

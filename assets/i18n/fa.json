@@ -15,13 +15,13 @@
     },
     "about": {
       "title": "درباره",
-      "game_version_title": "نسخه بازی",
-      "game_version_number": "۱.۰.۰",
+      "game_version_title": "نسخه",
+      "game_version_number": "۱.۱.۰",
       "contact": "تماس با ما"
     }
   },
   "dialog": {
-    "share": "میتونی به ما ایمیل بزنی \n nazanin.dev@gmail.com",
+    "share": "با ما در تماس باش",
     "exit": {
       "title": "مطمئنی؟؟",
       "content": "که واقعا میخوای بری"
@@ -50,8 +50,8 @@
     "start": "شروع",
     "add_truth": "حقیقت +",
     "add_dare": "جرات +",
-    "cool": "چه باحال",
-    "meow": "میوووو",
+    "email": "ایمیل",
+    "sms": "SMS",
     "go": "بچرخون",
     "truth": "حقیقت",
     "dare": "جرات",

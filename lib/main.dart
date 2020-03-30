@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:truth_or_dare/services/intents/service_locator.dart';
 
 import 'models/player_data.dart';
 import 'screens/cat_screen.dart';
@@ -31,6 +32,9 @@ void main() async {
     supportedLocales: ['en_US', 'fa' /*, 'tr'*/],
   );
 
+  // Intent to calls email etc
+  setupLocator();
+
   runApp(LocalizedApp(delegate, TruthDare()));
 }
 
@@ -51,7 +55,7 @@ class _TruthDareState extends State<TruthDare> {
       child: ChangeNotifierProvider(
         create: (context) => PlayerData(),
         child: MaterialApp(
-          debugShowCheckedModeBanner: false,
+          debugShowCheckedModeBanner: true,
           localizationsDelegates: [
             // ... app-specific localization delegate[s] here
             GlobalMaterialLocalizations.delegate,
