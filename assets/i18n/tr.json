@@ -21,7 +21,7 @@
     }
   },
   "dialog": {
-    "share": "Bu e-posta ile bize ulaşın:\nnazanin.dev@gmail.com",
+    "share": "Bu e-posta ile bize ulaşın:",
     "exit": {
       "title": "Emin misiniz",
       "content": "Uygulamadan çıkmak istiyor musunuz?"

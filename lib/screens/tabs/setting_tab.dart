@@ -10,8 +10,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../constants.dart';
 
 final CallsAndMessagesService _service = locator<CallsAndMessagesService>();
-final String number = "+905523329577";
-final String email = "nazanin.dev@gmail.com";
+final String number = "+989120171247";
+final String email = "app.nightmare@gmail.com";
 
 class SettingTab extends StatelessWidget {
   const SettingTab({@required this.context});

@@ -55,7 +55,7 @@ class _TruthDareState extends State<TruthDare> {
       child: ChangeNotifierProvider(
         create: (context) => PlayerData(),
         child: MaterialApp(
-          debugShowCheckedModeBanner: true,
+          debugShowCheckedModeBanner: false,
           localizationsDelegates: [
             // ... app-specific localization delegate[s] here
             GlobalMaterialLocalizations.delegate,

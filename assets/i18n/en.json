@@ -21,7 +21,7 @@
     }
   },
   "dialog": {
-    "share": "Feel free to reach us!",
+    "share": "Feel free to reach us by:",
     "exit": {
       "title": "Are you sure?",
       "content": "Do you want to exit the App"
